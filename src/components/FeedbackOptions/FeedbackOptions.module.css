@@ -1,0 +1,11 @@
+.btn{
+    font-size: 24px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    box-shadow:3px 3px 3px 3px rgba(155, 153, 153, 0.5);
+}
+.btn__block{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
