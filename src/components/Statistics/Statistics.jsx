@@ -1,42 +1,38 @@
  import React, {Component} from 'react';
  import css from './Statistics.module.css';
   
-class Statistics extends Component{
-    state = {
-        good: 0,
-        neutral: 0,
-        bad: 0,
-        total: 0,
-        positivePercentage: 0,
-      };
-     
+export  const Statistics =({
+    good = 0,
+    neutral = 0,
+    bad = 0,
+    total = 0,
+    positivePercentage = 0,
 
-      render(){
+}) => {
         return (
             <div>
             <ul className={css.list}>
             <li>
-              Good: <span>{this.state.good}</span>
+              Good: <span>{good}</span>
             </li>
             <li>
-              Neutral: <span>{this.state.neutral}</span>
+              Neutral: <span>{neutral}</span>
             </li>
             <li>
-              Bad: <span>{this.state.bad}</span>
+              Bad: <span>{bad}</span>
             </li>
       
             <li>
-              Total: <span>{this.state.total}</span>
+              Total: <span>{total}</span>
             </li>
             <li >
-              Positive feedback: <span>{this.state.positivePercentage}%</span>
+              Positive feedback: <span>{positivePercentage}%</span>
             </li>
           </ul>
           </div>
         )
       }
-    }
-    export default Statistics;
+  
 
 // Statistics.prototype = {
 //   good: PropTypes.number,
